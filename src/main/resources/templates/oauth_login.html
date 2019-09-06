@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link th:href="@{/css/cms.css}" rel="stylesheet"/>
+    <link th:href="@{/css/mat.css}" rel="stylesheet"/>
+</head>
+<body>
+<form th:action="@{/login}" method="post">
+    <div class="centered">
+        <h1 class="mat-header ds-h2">Welcome to the Measure Authoring Tool</h1>
+        <div class="centerDiv">
+            <div class="borderedDiv">
+                <div class="header">
+                    <div class="row">
+                        <h3 class="form-signin-heading ds-h2">Please sign in</h3>
+                    </div>
+                </div>
+                <div class="paddedDiv">
+                    <div th:if="${error}" class="ds-c-alert ds-c-alert--error">
+                        <p th:if="${error}" class="ds-c-alert__text"><b th:text="${error}"></b></p>
+                    </div>
+                    <p>
+                        <label for="username" class="ds-c-label">Username</label>
+                        <input type="text" id="username" name="username" class="ds-c-field"
+                           placeholder="Username" required autofocus/>
+                    </p>
+                    <p>
+                        <label for="password" class="ds-c-label">Password</label>
+                        <input type="password" id="password" name="password" class="ds-c-field"
+                           title="Enter Password Required"
+                           placeholder="Enter Password" required autofocus/>
+                    </p>
+                    <p>
+                        <label for="twoFactorAuth" class="ds-c-label">Security Code</label>
+                        <input type="text" id="twoFactorAuth" name="twoFactorAuth" class="ds-c-field"
+                           title="Enter Security Code Required"
+                           placeholder="Enter Security Code" required autofocus/>
+                    </p>
+                    <button class="ds-c-button ds-c-button--success" type="submit">Sign in</button>
+                    <br/>
+                </div>
+                <div class="footer">
+                    <div class="row graybackground">
+                        <div class="footer-cell">
+                            <div class="footer-div" align="left">Forgot your&nbsp;</div>
+                            <div class="footer-div" align="left">
+                                <a href="/forgot_login_id" title="Forgot LoginId" alt="User ID">User ID</a> or&nbsp;
+                            </div>
+                            <div class="footer-div" align="left">
+                                <a href="/forgot_password" title="Forgot Password" alt="Password">Password?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+</body>
+</html>

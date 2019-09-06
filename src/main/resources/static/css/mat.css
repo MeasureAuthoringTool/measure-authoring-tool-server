@@ -1,0 +1,79 @@
+body {
+    background-color: #F1F1F1;
+}
+
+.centered {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+
+.centerDiv {
+    display: inline-block;
+    text-align: left;
+    width: 50%;
+}
+
+.paddedDiv {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.mat-header {
+    color: black;
+}
+
+.form-signin-heading {
+    padding-left: 10px;
+    background-color: #112E51;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.borderedDiv {
+    border: solid 1px black;
+    background-color: white;
+}
+
+.footer {
+    display: table;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.footer-cell {
+    display: table-cell;
+    height: 30px;
+    width: 100%;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+.footer-div > a {
+    text-decoration: none;
+}
+
+.header {
+    display: table;
+    width: 100%;
+}
+
+.row {
+    display: table-row;
+}
+
+.graybackground {
+    background-color: #F5F5F5;
+}
+
+.footer-div {
+    float: left;
+}
+
+.buttonPanel {
+    margin 5px;
+    padding: 15px;
+}

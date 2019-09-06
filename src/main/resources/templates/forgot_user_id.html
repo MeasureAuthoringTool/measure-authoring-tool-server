@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forgot User ID</title>
+    <link th:href="@{/css/cms.css}" rel="stylesheet"/>
+    <link th:href="@{/css/mat.css}" rel="stylesheet"/>
+</head>
+<body>
+<form th:action="@{/submit_forgot_user_id}" method="post">
+    <div class="centered">
+        <h1 class="mat-header ds-h2">Measure Authoring Tool</h1>
+        <div class="centerDiv">
+            <div class="borderedDiv">
+                <div class="header">
+                    <div class="row">
+                        <h3 class="form-signin-heading ds-h2">Request Your User ID</h3>
+                    </div>
+                </div>
+                <div class="paddedDiv">
+                    <label class="ds-c-label">Enter the E-Mail address associated with your MAT account:</label>
+                    <p>
+                        <label for="email" class="ds-c-label">Email Address</label>
+                        <input type="text" id="email" name="email" class="ds-c-field"
+                               placeholder="Enter Email Address" required autofocus/>
+                    </p>
+                </div>
+                <div class="buttonPanel">
+                    <button type="submit" class="ds-c-button ds-c-button--primary" title="Submit">Submit</button>
+                    <button type="button" class="ds-c-button ds-c-button--danger" title="Cancel" id="cancelButton">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+</body>
+</html>
